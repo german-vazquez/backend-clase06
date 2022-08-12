@@ -20,7 +20,7 @@ public class GrillaDePeliculasProxy implements IGrillaDePeliculas {
         String origenPelicula = peliculaBuscada.getPais();
         String origenIP = dirIP.getPais();
         if (!origenPelicula.equals(origenIP)) {
-            throw new PeliculaNoHabilitadaException(nombrePelicula + "no disponible para" + origenIP);
+            throw new PeliculaNoHabilitadaException(nombrePelicula + " no disponible para " + origenIP);
         } else {
             return peliculaBuscada;
         }
